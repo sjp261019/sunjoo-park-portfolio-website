@@ -19,6 +19,7 @@ h1 {font-size: 48px;}
     height: 100vh;
 }
 
+/* CONTAINERS */
 .container{
     display: flex;
     align-items: center;
@@ -135,7 +136,7 @@ h1 {font-size: 48px;}
 
 #introText > h2 {
     font-weight: 400;
-    line-height: 150%;
+    line-height: 175%;
 }
 
 #introText > h2 > b {
@@ -193,22 +194,17 @@ h1 {font-size: 48px;}
     transform-style: preserve-3d;
 }
 
-.tilt > img{
-    transform: translateZ(0px);
-}
-
 /* ------------------------------ */
 /* WORK */
 /* ------------------------------ */
 
-.work{
+#work{
     width: 100%;
     margin:auto;
     
-    display: grid;
-    grid-template-columns: 100%;
-    grid-auto-rows: 100%;
-    justify-content: center;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
 }
 
 .grid-container {
