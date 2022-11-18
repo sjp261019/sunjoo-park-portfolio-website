@@ -31,6 +31,7 @@ h1 {font-size: 48px;}
     justify-content: center;
     display: flex;
     flex-direction: column;
+    row-gap: 50px;
 }
 
 /* ANIMATIONS */
@@ -125,10 +126,21 @@ h1 {font-size: 48px;}
 
 #introText{
     z-index: 10;
+
     width: 50%;
     white-space: nowrap;
-    margin-bottom: -500px;
+    margin-bottom: -600px;
     opacity: 0%;
+}
+
+#introText > h2 {
+    font-weight: 400;
+    line-height: 150%;
+}
+
+#introText > h2 > b {
+    text-decoration: underline;
+    color: #2A22C3;
 }
 
 #introText > h3 {
@@ -137,6 +149,8 @@ h1 {font-size: 48px;}
 
 #introSlide{
     margin-left: -40%;
+    margin-bottom: -300px;
+    opacity: 0%;
     width: 90%;
     align-content:flex-end;
 }
@@ -151,7 +165,21 @@ h1 {font-size: 48px;}
     transform: scale(1.1);
     perspective: 1000px;
 }
+
 .tilt{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.tilt:nth-child(1){ Left:0; top:0; }
+.tilt:nth-child(2){ Left:50%; top:0; }
+
+.tilt:nth-child(1):hover ~ .tiltImg{ transform: rotateX(0deg) rotateY(10deg); }
+.tilt:nth-child(2):hover ~ .tiltImg{ transform: rotateX(0deg) rotateY(-5deg); }
+
+.tiltImg{
     position: relative;
     height: 60vh;
     overflow: hidden;
@@ -166,7 +194,7 @@ h1 {font-size: 48px;}
 }
 
 .tilt > img{
-    transform: translateZ(40px);
+    transform: translateZ(0px);
 }
 
 /* ------------------------------ */

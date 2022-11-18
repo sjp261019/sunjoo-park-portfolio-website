@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-    $("#introText").animate({"margin-bottom":"0", "opacity":"100%"}, 2000, "easeInOutExpo");
-    $("#introText > h2").animate({"margin-bottom":"0", "opacity":"100%"}, 2000, "easeInOutExpo").delay(1000);
+    $("#introText").delay(80).animate({"margin-bottom":"0", "opacity":"100%"}, 2000, "easeInOutExpo");
+    $("#introSlide").animate({"margin-bottom":"0", "opacity":"100%"}, 2000, "easeInOutExpo");
 
     //SCROLL DOWN ON CLICK
     $(".clickArrow").click(function(){
