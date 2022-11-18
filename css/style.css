@@ -22,7 +22,7 @@ h1 {font-size: 48px;}
 .container{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
 }
 
 .content{
@@ -67,8 +67,7 @@ h1 {font-size: 48px;}
 
 .menu{
     width: 100%;
-    justify-content: right;
-    justify-self: right;
+    -webkit-justify-content: flex-end;
 }
 
 .menu > a{
@@ -130,7 +129,6 @@ h1 {font-size: 48px;}
     white-space: nowrap;
     margin-bottom: -500px;
     opacity: 0%;
-    justify-self: left;
 }
 
 #introText > h3 {
@@ -159,7 +157,7 @@ h1 {font-size: 48px;}
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: right;
+    -webkit-justify-content: flex-end;
 
     transition: all 0.6s ease-in-out;
     transform: rotateX(0deg) rotateY(0deg);
