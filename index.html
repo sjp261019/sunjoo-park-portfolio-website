@@ -5,21 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FAVICON ICON -->
-    <link rel="icon" href="img/sun.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
     <!-- FOR ENGINE SEARCH RESULTS -->
     <meta name="description" content="Sunjoo Park - Portfolio">
     <meta name="keywords" content="Sunjoo Park">
 
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <title>SUNJOO PARK</title>
+    <script src="js/script.js"></script>
+    <title>SUN JOO PARK</title>
 </head>
 <body>
     <div class="background"></div>
+     <!-- NAV BAR -->
+     <div class="container nav">
+        <a href="index.html" class="logo"><img src="img/logo.png" width="50px"><p>sunjoo park</p></a>
+        <div class="container menu">
+            <a href="index.html">work</a>
+            <a href="passion.html">passion</a>
+            <a href="about.html">about</a>
+            <a href="https://drive.google.com/file/d/1Nuj1apDpZr8hQ2SAyOBUz7DkcMvjrMOF/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a>
+        </div>
+    </div>
+
+    <!-- SCROLL UP -->
+    <div class="scrollUp bottom"><img src="img/up.png" class="up"></div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <!-- INTRO -->
+        <div class="container intro">
+            <div id="introText">
+                <h1>Hi, I'm  Sunjoo! &#128075;</h1><br>
+                <h2>I’m a UI/UX designer passionate about<br>bringing people and communities together<br>through digital media.</h2><br>
+                <h3>Currently studying Industrial Design @ RISD</h3><br><br>
+                <div class="clickArrow"><img src="img/arrow.png" class="arrow" width="40px"></div>
+            </div>
+            <div id="introSlide">
+                <img src="img/workItem/lumina.jpg" width="800">
+            </div>
+        </div>
+
+        <!-- WORK -->
+        <div class="container page" id="work"> 
+            <div class="grid-container work-grid"></div>
+        </div>
+    </div>
 </body>
 </html>
