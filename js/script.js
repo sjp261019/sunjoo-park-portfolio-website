@@ -32,4 +32,12 @@ $(document).ready(function(){
         $(".work-grid").append(html);
     });
 
+    setInterval(function(){
+        var imgHeight = (($(".tiltContainer").height())+($(window).height()*0.105))*2;
+        $(".slideContainer").animate({"margin-top":-imgHeight}, 2500, "easeInOutExpo", function(){
+            $(".slideContainer").find("li:first-child").insertAfter($(".slideContainer").find("li:last-child"));
+            $(".slideContainer").css({"margin":"0px"});
+        });
+    }, 4000);
+
 });

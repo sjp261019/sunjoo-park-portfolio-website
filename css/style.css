@@ -26,6 +26,12 @@ h1 {font-size: 48px;}
     justify-content: flex-start;
 }
 
+.overflow{
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
 .content{
     margin: auto;
     width: 85vw;
@@ -92,6 +98,7 @@ h1 {font-size: 48px;}
 
 /* SCROLL*/
 .up{
+    z-index: 15;
     position: fixed;
     bottom: 0px;
     right: 0px;
@@ -119,6 +126,30 @@ h1 {font-size: 48px;}
 .arrow:hover{ opacity: 50%; }
 
 /* INTRO */
+.cover{
+    z-index: 8;
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+}
+
+.top{
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(255,255,255,0) 100%);
+}
+
+.bottom{
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.blur{
+    backdrop-filter: blur(5px);
+    height: 15vh;
+}
+
 .intro{
     display: flex;
     width: 100%;
@@ -149,18 +180,28 @@ h1 {font-size: 48px;}
 }
 
 #introSlide{
-    margin-left: -40%;
+    z-index: 5;
+    margin-left: -20%;
     margin-bottom: -300px;
     opacity: 0%;
-    width: 90%;
-    align-content:flex-end;
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.slideContainer{
+    display: flex;
+    flex-direction: column;
 }
 
 .tiltContainer{
     position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 100%;
     transition: all 0.6s ease-in-out;
     perspective: 1000px;
 }
+
 .tiltContainer:hover{
     transition: all 0.3s linear;
     transform: scale(1.1);
@@ -178,7 +219,7 @@ h1 {font-size: 48px;}
 .tilt:nth-child(2){ Left:50%; top:0; }
 
 .tilt:nth-child(1):hover ~ .tiltImg{ transform: rotateX(0deg) rotateY(10deg); }
-.tilt:nth-child(2):hover ~ .tiltImg{ transform: rotateX(0deg) rotateY(-5deg); }
+.tilt:nth-child(2):hover ~ .tiltImg{ transform: rotateX(0deg) rotateY(-10deg); }
 
 .tiltImg{
     position: relative;
