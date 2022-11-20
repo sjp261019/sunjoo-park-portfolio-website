@@ -19,6 +19,13 @@ h1 {font-size: 48px;}
     height: 100vh;
 }
 
+/* ANIMATIONS */
+@keyframes move {
+    0%{ transform: translateY(0px); }
+    50%{ transform: translateY(20px); }
+    100%{ transform: translateY(0px); }
+}
+
 /* CONTAINERS */
 .container{
     display: flex;
@@ -38,14 +45,7 @@ h1 {font-size: 48px;}
     justify-content: center;
     display: flex;
     flex-direction: column;
-    row-gap: 50px;
-}
-
-/* ANIMATIONS */
-@keyframes move {
-    0%{ transform: translateY(0px); }
-    50%{ transform: translateY(20px); }
-    100%{ transform: translateY(0px); }
+    row-gap: 150px;
 }
 
 /* NAV BAR */
@@ -239,13 +239,18 @@ h1 {font-size: 48px;}
 /* WORK */
 /* ------------------------------ */
 
-#work{
+.work{
     width: 100%;
-    margin:auto;
-    
     display: flex;
     text-align: left;
     flex-direction: column;
+    row-gap: 5vh;
+    margin-top: 8%;
+}
+
+.work > h2{
+    text-align: left;
+    width: 100%;
 }
 
 .grid-container {
@@ -268,6 +273,7 @@ h1 {font-size: 48px;}
     align-items: center;
     justify-content: center;
     position: relative;
+    height: 100%;
 }
 
 .grid-items > a > h5 {color:white;}
@@ -300,6 +306,18 @@ h1 {font-size: 48px;}
 }
   .info-container:hover{ opacity: 100; }
   .info-container > p{ margin-top: 5%; }
+
+/*FOOTER*/
+footer{ 
+    margin: auto;
+    display: flex;
+    z-index: 15;
+    padding: 2% 4%;
+    position: relative;
+    justify-content: center;
+    bottom: 0px;
+    width: 100%;
+}
 
 /*MOBILE*/
 @media screen and (max-width: 768px) {

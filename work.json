@@ -1,54 +1,32 @@
 [
     {
-        "name": "LUMINA",
+        "name": "GOGO",
         "item": "work/lumina.html",
-        "image": "img/workItem/lumina.jpg",
-        "caption": 2021
+        "image": "img/workItem/gogo.jpg",
+        "caption": 2022
     },
     {
-        "name": "WAVES",
-        "item": "work/waves.html",
-        "image": "img/workItem/waves.jpg",
-        "caption": 2021
-    },
-    {
-        "name": "EXPLODED VIEW",
+        "name": "FOLIA",
         "item": "work/exploded.html",
-        "image": "img/workItem/exploded.jpg",
-        "caption": 2021
+        "image": "img/workItem/folia.png",
+        "caption": 2022
     },
-
     {
-        "name": "WOOD I",
-        "item": "work/wood.html",
-        "image": "img/workItem/wood.jpg",
-        "caption": 2021
-    },
-
-    {
-        "name": "CONNECTION",
-        "item": "work/connection.html",
-        "image": "img/workItem/connection.jpg",
-        "caption": 2021
-    },
-
-    {
-        "name": "ID SKETCH",
+        "name": "AMTRAK REDESIGN",
         "item": "work/sketch.html",
-        "image": "img/workItem/sketch.jpg",
-        "caption": 2021
+        "image": "img/workItem/folia.png",
+        "caption": 2022
     },
-
     {
-        "name": "SAMSUNG AR",
+        "name": "LIVELY",
         "item": "work/samsung.html",
         "image": "img/workItem/samsung.jpg",
-        "caption": 2020
+        "caption": 2022
     },
     {
-        "name": "\"MELON\" UI/UX REDESIGN",
+        "name": "CHARGE",
         "item": "work/melon.html",
         "image": "img/workItem/melon.jpg",
-        "caption": 2020
+        "caption": 2022
     }
 ]

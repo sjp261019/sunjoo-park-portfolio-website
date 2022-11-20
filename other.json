@@ -1,0 +1,20 @@
+[
+    {
+        "name": "DESIGN FOR AMERICA",
+        "item": "work/lumina.html",
+        "image": "img/workItem/lumina.jpg",
+        "caption": 2022
+    },
+    {
+        "name": "DRAW 3",
+        "item": "work/waves.html",
+        "image": "img/workItem/waves.jpg",
+        "caption": 2022
+    },
+    {
+        "name": "SAMSUNG AR X SM ENTERTAINMENT",
+        "item": "work/exploded.html",
+        "image": "img/workItem/samsung.jpg",
+        "caption": 2020
+    }
+]

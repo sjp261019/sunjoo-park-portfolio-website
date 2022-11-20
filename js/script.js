@@ -40,4 +40,40 @@ $(document).ready(function(){
         });
         $(".work-grid").append(html);
     });
+
+    //PLAY JSON
+    $.getJSON("work.json", function(play) {
+        let html = '';
+        $.each(play, function(i, piece) {
+            html += 
+                `<div class="grid-items">
+                    <a href= ${piece.item} class="info-container">
+                        <h5>${piece.name}</h5>
+                        <p>${piece.caption}</p>
+                    </a>
+                    <div class="image-container">
+                        <img src= ${piece.image}>
+                    </div>
+                </div>`
+        });
+        $(".play-grid").append(html);
+    });
+
+    //OTHER JSON
+    $.getJSON("other.json", function(other) {
+        let html = '';
+        $.each(other, function(i, piece) {
+            html += 
+                `<div class="grid-items">
+                    <a href= ${piece.item} class="info-container">
+                        <h5>${piece.name}</h5>
+                        <p>${piece.caption}</p>
+                    </a>
+                    <div class="image-container">
+                        <img src= ${piece.image}>
+                    </div>
+                </div>`
+        });
+        $(".other-grid").append(html);
+    });
 });
