@@ -52,11 +52,11 @@ h1 {font-size: 48px;}
 .nav{
     margin: auto;
     display: flex;
+    width: 100vw;
     z-index: 15;
     padding: 2% 4%;
     position: fixed;
     top: 0px;
-    width: 100%;
 }
 
 .logo{
@@ -91,10 +91,6 @@ h1 {font-size: 48px;}
     opacity: 100%;
     color: #2A22C3;
 }
-.menu > a:current{
-    opacity: 100%;
-    color: #2A22C3;
-}
 
 /* SCROLL*/
 .up{
@@ -114,6 +110,7 @@ h1 {font-size: 48px;}
 .arrow{
     cursor: pointer;
     opacity: 100%;
+    width: 40px;
 
     animation-name: move;
     animation-duration: 2s;
@@ -314,12 +311,26 @@ footer{
     z-index: 15;
     padding: 2% 4%;
     position: relative;
-    justify-content: center;
+    justify-content: center ;
     bottom: 0px;
     width: 100%;
 }
 
 /*MOBILE*/
 @media screen and (max-width: 768px) {
+    h1 {font-size: 24px;}
+    h2 {font-size: 14px;}
+    h3 {font-size: 14px;}
+
+    .menu > a{
+        font-size: 14px;
+        padding-right: 4%;
+    }
+    .logo > p {font-size: 0px;}
     
+    .up{width: 40px;}
+    .arrow{width: 30px;}
+
+    .tiltImg {opacity: 50%; filter:blur(2px);}
+
 }
