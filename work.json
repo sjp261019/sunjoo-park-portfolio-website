@@ -1,30 +1,27 @@
 [
     {
         "name": "GOGO",
-        "item": "work/lumina.html",
+        "item": "work/gogo.html",
         "image": "img/workItem/gogo.jpg",
         "caption": 2022
-    },
+    }
+    ,
     {
         "name": "FOLIA",
-        "item": "work/exploded.html",
+        "item": "work/folia.html",
         "image": "img/workItem/folia.png",
         "caption": 2022
-    },
+    }
+    ,
     {
-        "name": "AMTRAK REDESIGN",
-        "item": "work/sketch.html",
-        "image": "img/workItem/folia.png",
-        "caption": 2022
-    },
-    {
-        "name": "LIVELY",
-        "item": "work/samsung.html",
+        "name": "SEERSLAB INTERNSHIP",
+        "item": "work/seerslab.html",
         "image": "img/workItem/samsung.jpg",
-        "caption": 2022
-    },
+        "caption": 2020
+    }
+    ,
     {
-        "name": "CHARGE",
+        "name": "COMING SOON",
         "item": "work/melon.html",
         "image": "img/workItem/melon.jpg",
         "caption": 2022

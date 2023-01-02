@@ -16,7 +16,7 @@ $(document).ready(function(){
 
     //IMAGE-TILT SLIDESHOW
     setInterval(function(){
-        var imgHeight = (($(".tiltContainer").height())+($(window).height()*0.05))*2;
+        var imgHeight = ($(".tiltImg").height()+$(window).height()*0.1)*2;
         $(".slideContainer").animate({"margin-top":-imgHeight}, 2500, "easeInOutExpo", function(){
             $(".slideContainer").find("li:first-child").insertAfter($(".slideContainer").find("li:last-child"));
             $(".slideContainer").css({"margin":"0px"});

@@ -53,6 +53,7 @@ h1 {font-size: 48px;}
     margin: auto;
     display: flex;
     width: 100vw;
+    height: 100px;
     z-index: 15;
     padding: 2% 4%;
     position: fixed;
@@ -68,7 +69,7 @@ h1 {font-size: 48px;}
 .logo > p {
     color: #2A22C3;
     white-space: nowrap;
-    margin-left: 4px;
+    margin-left: 24px;
     font-size: 24px;
     font-weight: 500;
 }
@@ -186,14 +187,14 @@ h1 {font-size: 48px;}
 }
 
 .slideContainer{
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
 
 .tiltContainer{
+    margin: 5vh;
     position: relative;
-    padding-top: 5%;
-    padding-bottom: 5%;
     height: 100%;
     transition: all 0.6s ease-in-out;
     perspective: 1000px;
@@ -219,17 +220,22 @@ h1 {font-size: 48px;}
 .tilt:nth-child(2):hover ~ .tiltImg{ transform: rotateX(0deg) rotateY(-10deg); }
 
 .tiltImg{
-    position: relative;
-    height: 60vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
     transition: all 0.6s ease-in-out;
     transform: rotateX(0deg) rotateY(0deg);
     perspective: 1000px;
     transform-style: preserve-3d;
+}
+
+.tiltImg > img{
+    height: 60vh;
+    width: 50vw;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* W3-CSS Edits */
+.w3-content {
+    margin-top: 116px;
 }
 
 /* ------------------------------ */
@@ -238,14 +244,15 @@ h1 {font-size: 48px;}
 
 .work{
     width: 100%;
+    height: 80vh;
     display: flex;
     text-align: left;
     flex-direction: column;
-    row-gap: 5vh;
-    margin-top: 8%;
+    margin-top: 100px;
 }
 
 .work > h2{
+    margin-bottom: 16px;
     text-align: left;
     width: 100%;
 }
@@ -259,7 +266,6 @@ h1 {font-size: 48px;}
     grid-gap: 2%;
     grid-row-gap: 4%;
     justify-content: center;
-    margin: auto;
 }
 
 .grid-items{
@@ -286,7 +292,7 @@ h1 {font-size: 48px;}
 .image-container > img {
     z-index: 0;
     width: 100%;
-    height: 100%;
+    height: 30vh;
     object-fit: cover;
 }
 
@@ -306,21 +312,19 @@ h1 {font-size: 48px;}
 
 /*FOOTER*/
 footer{ 
-    margin: auto;
     display: flex;
     z-index: 15;
-    padding: 2% 4%;
-    position: relative;
-    justify-content: center ;
+    padding: 4% 4%;
+    justify-content: center;
     bottom: 0px;
     width: 100%;
 }
 
 /*MOBILE*/
 @media screen and (max-width: 768px) {
-    h1 {font-size: 24px;}
-    h2 {font-size: 14px;}
-    h3 {font-size: 14px;}
+    h1 {font-size: 36px;}
+    h2 {font-size: 16px;}
+    h3 {font-size: 16px;}
 
     .menu > a{
         font-size: 14px;
